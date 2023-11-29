@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking</title>
+    {% load static %}
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<div class="container mt-5">
+    <form method="post" action="{% url 'success' %}">
+        {% csrf_token %}
+        <div class="row mb-3">
+            <div class="col">
+                <label for="firstname">FirstName</label>
+            </div>
+            <div class="col">
+                {{ form.firstname }}
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="lastname">Lastname</label>
+            </div>
+            <div class="col">
+                {{ form.lastname }}
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="email">Email</label>
+            </div>
+            <div class="col">
+                {{ form.email }}
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="age">Age</label>
+            </div>
+            <div class="col">
+                {{ form.age }}
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="phone">Phone.No</label>
+            </div>
+            <div class="col">
+                {{ form.phone }}
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="classes">Choose the Class you want</label>
+            </div>
+            <div class="col">
+                <select class="form-control" name="classes" id="classes">
+                    <option value="" disabled selected>Select option</option>
+                    <option value="aerobics">Aerobics</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="dance">Dance class</option>
+                    <option value="hiit">HIIT (Step Workout)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-success">Book</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

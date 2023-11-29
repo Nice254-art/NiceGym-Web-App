@@ -1,0 +1,22 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="GymDjango" type="Python.DjangoServer" factoryName="Django server" singleton="false">
+    <module name="GymDjango" />
+    <option name="INTERPRETER_OPTIONS" value="\Python38-32\" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SDK_HOME" value="" />
+    <option name="WORKING_DIRECTORY" value="" />
+    <option name="IS_MODULE_SDK" value="true" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <option name="launchJavascriptDebuger" value="true" />
+    <option name="port" value="8000" />
+    <option name="host" value="" />
+    <option name="additionalOptions" value="" />
+    <option name="browserUrl" value="http://127.0.0.1:8000/" />
+    <option name="runTestServer" value="false" />
+    <option name="runNoReload" value="true" />
+    <option name="useCustomRunCommand" value="true" />
+    <option name="customRunCommand" value="" />
+    <method v="2" />
+  </configuration>
+</component>
